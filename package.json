@@ -10,10 +10,20 @@
             "default": "./dist/utils/index.js"
         },
         "#db": {
-            "development": "./src/db/index.ts"
+            "development": "./src/db/index.ts",
+            "default": "./dist/db/index.js"
         },
         "#models": {
-            "development": "./src/models/index.ts"
+            "development": "./src/models/index.ts",
+            "default": "./dist/models/index.js"
+        },
+        "#controllers": {
+            "development": "./src/controllers/index.ts",
+            "default": "./dist/controllers/indes.js"
+        },
+        "#routes": {
+            "development": "./src/routes/index.ts",
+            "default": "./dist/routes/index.js"
         }
     },
     "scripts": {
@@ -27,7 +37,12 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@types/express": "^5.0.6",
         "@types/node": "^24.10.12",
         "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "express": "^5.2.1",
+        "mongoose": "^9.3.0"
     }
 }
