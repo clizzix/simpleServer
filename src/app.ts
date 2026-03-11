@@ -1,6 +1,4 @@
 import '#db';
-import { Post } from '#models';
-import type { PostInputType } from '#types';
 import express from 'express';
 import { postRoutes } from '#routes';
 
