@@ -1,4 +1,4 @@
-# WBS Node.js TypeScript Backend Scaffold
+# Basuc Node.js, Mongoose, Express.js scaffold
 
 A modern, production-ready scaffold for Node.js backend projects using TypeScript with ES modules support.
 
@@ -7,36 +7,22 @@ A modern, production-ready scaffold for Node.js backend projects using TypeScrip
 ### Setup
 
 ```bash
-# Clone the template repository
-git clone https://github.com/WebDev-WBSCodingSchool/wbs-node-ts-template.git your-project-name
 
 # Navigate to your project
 cd your-project-name
 
-# Remove the existing git history and reinitialize
-rm -rf .git
+# initialize git
 git init
 
 # Install dependencies
 npm install
+npm install -D typescript @types/node
+npm i mongoose
+npm i express && npm i -D @types/express
 
 # Start development
 npm run dev
 ```
-
-## 📁 Project Structure
-
-```bash
-.
-├── package-lock.json   # Dependency lock file (auto-generated)
-├── package.json        # Project configuration and dependencies
-├── README.md          # This file
-├── src
-│   └── app.ts          # Application entry point
-└── tsconfig.json       # TypeScript configuration
-```
-
-> **Note**: The `dist/` directory will be created automatically when you run `npm run build` to contain the compiled JavaScript output.
 
 ## 🛠 Available Scripts
 
@@ -78,9 +64,3 @@ import { helper } from '#utils';
 ```
 
 You need to add additional modules subpaths to the `imports` field in `package.json`
-
-## 📦 Dependencies
-
-### Runtime Dependencies
-
-- None (pure Node.js setup ready for your additions)
